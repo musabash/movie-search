@@ -122,6 +122,14 @@ h1 {
   margin: 0 auto;
   box-shadow: 2px 2px 1px rgb(51, 56, 53);
   text-align: center;
+  object-fit: contain;
+  width: 12em;
+  margin: 0.5em;
+  align-self: center;
+}
+
+.no-img {
+  width: 6em;
 }
 
 .title-min {

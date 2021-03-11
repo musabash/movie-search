@@ -16,7 +16,7 @@ function MovieCard() {
       {movie.poster_path ? <img className="item--image"
           src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
           alt={movie.title + ' poster'}
-      /> : <img className="item--image"
+      /> : <img className="item--image no-img"
           src={imag}
           alt="no image"
       />}
