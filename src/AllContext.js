@@ -22,6 +22,7 @@ function AllContextProvider(props) {
         .then(data => setMovies(data.results))
         .catch(err => setError(err))
         setInputValue('')
+        console.log(movies)
   }
 
   const value = {

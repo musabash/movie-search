@@ -176,6 +176,18 @@ span {
   font-weight: 700;
 }
 
+.go-back {
+  background: #697080;
+  color: #efefde;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0.2em;
+}
+
+.go-back:hover {
+  color: #ee5959;
+}
+
 @media (max-width: 550px) {
   .form {
     display:flex;
