@@ -7,9 +7,12 @@ function AllContextProvider(props) {
   const [inputValue, setInputValue] = useState('')
   const [error, setError] = useState('')
 
+  const webAddress = process.env.REACT_APP_WEB_ADDRESS
+  const apiKey = process.env.REACT_APP_API_KEY
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    const url=`https://api.themoviedb.org/3/search/movie?api_key=328d760d9b2414d4f502638b62cf579c&language=en-US&query=${inputValue}&page=1&include_adult=false`
+    const url=`${webAddress}?api_key=${apiKey}&language=en-US&query=${inputValue}&page=1&include_adult=false`
     
       fetch(url)
         .then(res => {
