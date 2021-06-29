@@ -6,10 +6,8 @@ import MovieCard from './MovieCard'
 function App() {
   return (
     <div className="App">
-      <nav>
-          <Link to="/" className="link">Search Movies</Link>
-      </nav>
-      <h1>MOVIE SEARCH</h1> 
+      <h1>MOVIE SEARCH</h1>
+      <SearchMovies />
       <Switch>
           <Route exact path="/">
             <SearchMovies />
